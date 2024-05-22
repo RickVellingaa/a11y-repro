@@ -1,6 +1,6 @@
 import React from 'react';
-import {Text, Pressable} from 'react-native';
-import {StyleSheet} from 'react-native';
+import { Text, StyleSheet } from 'react-native';
+import { Pressable } from 'react-native-a11y';
 
 function Button() {
   return (
@@ -11,17 +11,16 @@ function Button() {
 }
 
 const styles = StyleSheet.create({
-  button: (style, backgroundColor) => ({
-    backgroundColor,
+  button: {
+    backgroundColor: '#fff',
     borderWidth: 1,
     display: 'flex',
     justifyContent: 'center',
     borderRadius: 8,
     opacity: 1,
-    borderColor: '#ccc',
+    borderColor: 'red',
     alignSelf: 'flex-start',
-    ...style,
-  }),
+  },
 
   text: {
     paddingHorizontal: 20,
